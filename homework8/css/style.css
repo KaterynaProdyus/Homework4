@@ -56,8 +56,12 @@
     background-color: #FFF;
     border: 1px solid #EFEFEF;
 }
+.list-main-links {
+    display: flex;
+    justify-content: center;  
+}
 .list-second-item {
-    margin-left: 16px;
+    margin-right: 16px;
     font-size: 16px;
 }
 .second-link {
@@ -70,7 +74,7 @@
     background-position: center;
     background-color: #F13C6E;
     background-repeat: no-repeat;
-    padding: 190px 0;
+    padding: 176px 0;
     color: #FFF;
 }
 .slider-wrapper-title {
@@ -92,14 +96,13 @@
 }
 .specialoffers {
     background-color: #EFEFEF;
+    padding: 40px 0;
 }
 .special-offers {
     color: #000;
-
     font-size: 24px;
     font-weight: 700;
-    padding-top: 80px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
 }
 .special-offers-card {
     display: flex;
@@ -108,11 +111,10 @@
 .special-card {
     display: inline-block;
     text-align: center;
-    width: 255px;
-    height: 363px;
     background-color: #FFFFFF;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding: 10px 50px;
 }
 .special-card-descr {
     color: #333;
@@ -141,14 +143,17 @@
     background-color: #EFEFEF;
 }
 
+.impuls-container-wrapper {
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2px;    
+}
 .impuls-logo {
-    padding: 35px 65px;
-    margin-right: -5px;
-    margin-top: -1px;
+    padding: 36px 75px;
     background-color: white;
     color: #FFF;
     display: inline-block;
-    border: 1px solid #EFEFEF;
 }
 
 .recent-wrapper {
@@ -156,78 +161,92 @@
     padding: 50px 0px;
 }
 .site-menu-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    column-count: 1;
     background-color: #FFF;
+    padding-top: 30px;
     padding-bottom: 50px;
+    border-top: 1px solid #EFEFEF;
 }
-.site-menu-title {
-    color: #000;
-
-    font-size: 16px;
-    font-weight: 500;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-.site-menu-text {
+.site-menu-link {
     color: #828282;
     font-size: 12px;
     line-height: 28px;
-    font-weight: 400;
+}
+.site-menu-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    max-width: 120px;
 }
 .gifts-wrapper {
     background-color: #EFEFEF;
 }
+.mail-wrapper-text {
+    padding-right: 100px;
+}
+.delivery-wrapper-text {
+    padding-right: 50px;
+}
 .gifts-section {
     color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
     background-color: #F13C6E;
     display: flex;
-    justify-content: space-around;
-    width: 500px;
-    height: 170px;
+    flex-grow: 1;
+    justify-content: space-between;
     padding: 20px 20px;
+    max-width: 550px;
 }
 .gift-details {
-    width: 200px;
-    display: grid;
-    justify-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.gifts-section img {
-    display: inline;
-    float: right;
-    margin: 0 auto;
+.delivery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.gifts-section h1 {
+
+.gifts-section h3 {
     font-size: 18px;
 }
 .gifts-section p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .store-map {
     background-color: #F13C6E;
     border-radius: 30px;
     border: 1px solid white;
     color: white;
-    width: 200px;
-    height: 30px;
+    max-width: 200px;
+    line-height: 30px;
     font-size: 12px;
 }
-.enter-your-e-mail {
+.your-email {
     background-color: white;
     color: lightgray;
     border-radius: 30px;
     border: 1px solid white;
-    width: 200px;
-    height: 30px;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 30px;
+    max-width: 300px;
+    text-align: left;
+    padding-left: 20px;
 }
 .gifts-container-wrapper {
     display: flex;
+    padding: 50px 0;
     justify-content: space-between;
 }
 .map-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
 }
 .site-contact-wrapper {
     border-top: 1px solid #EFEFEF;
@@ -244,7 +263,6 @@
 .social-network img {
     padding-right: 20px;
 }
-
 .footer-wrapper {
     width: 100%;
     background-color: #EFEFEF;
@@ -252,15 +270,9 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+    justify-content: space-between;
 }
 .footer-copyright {
-    float: left;    
-    padding-top: 25px;
-    padding-bottom: 25px;
     color: #828282;
-}
-.footer-policy {
-    float: right;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
