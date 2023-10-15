@@ -85,8 +85,9 @@
     text-align: center;
 }
 .stripe {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     column-gap: 30px;
     justify-content: center;
 }
