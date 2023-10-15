@@ -1,0 +1,30 @@
+@import "./variables";
+
+.page__my-projects {
+    background-color: $blue-color;
+    padding: 100px 0;
+    text-align: center;
+}
+.stripe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 30px;
+    justify-content: center;
+}
+.stripe__project {
+    display: flex;
+}
+.project__image {
+    padding-right: 10px;
+}
+.project__title {
+    color: white;
+    display: grid;
+    row-gap: 5px;
+    grid-auto-columns: auto;
+    text-align: left
+}
+.project__title__bold {
+    font-weight: bold;
+}

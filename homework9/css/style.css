@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 .page {
     background-color: #EEEFF1;
     font-family: "Roboto";
@@ -31,7 +31,6 @@
     color: #000;
     font-weight: bold;
     font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .top__description {
     margin-top: 30px;
@@ -40,7 +39,6 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
 }
 .top__button {
@@ -52,7 +50,6 @@
     text-align: center;
     display: inline-block;
     color: #FFF;
-    font-family: 'Lucida Grande';
 }
 .page__center {
     background-color: white;
@@ -64,18 +61,16 @@
     text-align: center;
 }
 .center__about-me {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 32px;
     font-weight: 500;
     line-height: 38px;
 }
 .center__description {
     padding-top: 50px;
-    font-family: 'Lucida Sans Regular';
     color: #727272;
     font-weight: 400;
     line-height: 19px;
-    font-size: 17px;
+    font-size: 15px;
 }
 .page__my-projects {
     background-color: #34547A;
@@ -117,7 +112,6 @@
     display: block;
 }
 .center__work {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
@@ -125,7 +119,7 @@
     padding-top: 30px;
     padding-bottom: 50px;
     color: #727272;
-    font-size: 16px;
+    font-size: 15px;
 }
 .page__my-video {
     margin: 0 auto;
@@ -145,7 +139,6 @@
     display: block;
 }
 .footer__author {
-    font-family: 'Franklin Gothic Medium';
     font-size: 21px;
     font-weight: 500;
     line-height: 25px;
@@ -153,7 +146,6 @@
 }
 .footer__copyright {
     color: #FFF;
-    font-family: 'Lucida Sans';
     font-size: 13px;
     font-weight: 400;
     padding-top: 20px;
