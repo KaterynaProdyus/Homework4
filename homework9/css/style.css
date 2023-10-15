@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.page {
+    background-color: #EEEFF1;
+    font-family: "Roboto";
+}
+.page__top {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top__menu {
+    display: inline-block;
+    padding-top: 50px;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__item {
+    float: left;
+}
+.menu__link {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 40px;
+    font-size: 18px;
+}
+.top__header {
+    margin-top: 150px;
+    color: #000;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top__description {
+    margin-top: 30px;
+    max-width: 580px;
+    color: #727272;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+.top__button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    background-color: #34547A;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    color: #FFF;
+    font-family: 'Lucida Grande';
+}
+.page__center {
+    background-color: white;
+}
+.center {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 500px;
+    text-align: center;
+}
+.center__about-me {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+}
+.center__description {
+    padding-top: 50px;
+    font-family: 'Lucida Sans Regular';
+    color: #727272;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 17px;
+}
+.page__my-projects {
+    background-color: #34547A;
+    padding: 100px 0;
+    text-align: center;
+}
+.stripe {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 30px;
+    justify-content: center;
+}
+.stripe__project {
+    display: flex;
+}
+.project__image {
+    padding-right: 10px;
+}
+.project__title {
+    color: white;
+    display: grid;
+    row-gap: 5px;
+    grid-auto-columns: auto;
+    text-align: left
+}
+.project__title__bold {
+    font-weight: bold;
+}
+.page__my-work {
+    padding: 50px 0px;
+    margin-bottom: -50px;
+    background-color: #EEEFF1;
+}
+.my-work {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    display: block;
+}
+.center__work {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.my-work__text {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #727272;
+    font-size: 16px;
+}
+.page__my-video {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 57px;
+    background-color: #EEEFF1;
+    padding-bottom: 50px;
+}
+.page__footer {
+    background-color: #34547A;
+    padding: 30px 0px;
+}
+.footer__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+}
+.footer__author {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #FFF;
+}
+.footer__copyright {
+    color: #FFF;
+    font-family: 'Lucida Sans';
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 20px;
+}
