@@ -1,8 +1,8 @@
 @import "./variables";
 
 .page__top {
-    max-width: $max-width;
-    margin: $auto-margin;
+    padding: 50px 0;
+    background-color: #EEEFF1;
 }
 .top__header {
     margin-top: 150px;
@@ -15,17 +15,16 @@
     margin-top: 30px;
     max-width: 580px;
     color: #727272;
-    font-size: $description-size;
+    font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     text-align: left;
 }
 .top__button {
     margin-top: 50px;
-    margin-bottom: 100px;
     text-transform: uppercase;
-    background-color: $blue-color;
-    padding: 20px 50px;
+    background-color: #34547A;
+    padding: 20px 90px;
     text-align: center;
     display: inline-block;
     color: #FFF;

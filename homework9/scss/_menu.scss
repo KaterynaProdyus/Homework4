@@ -1,16 +1,19 @@
-.top__menu {
+.page__top {
+    padding: 50px 0;
+    background-color: #EEEFF1;
+}
+.navigation__menu {
     display: inline-block;
-    padding-top: 50px;
 }
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.menu__item {
+.navigation__item {
     float: left;
 }
-.menu__link {
+.navigation__link {
     display: block;
     text-align: left;
     text-transform: uppercase;

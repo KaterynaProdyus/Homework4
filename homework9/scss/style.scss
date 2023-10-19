@@ -3,9 +3,12 @@
 
 .page {
     font-family: $current-font-name;
-    background-color: $white-background;
 }
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 @import './topsection';
 
 .page__center {
@@ -24,59 +27,63 @@
 }
 .center__description {
     padding-top: 50px;
+    max-width: 500px;
     color: #727272;
     font-weight: 400;
     line-height: 19px;
-    font-size: $description-size;
+    font-size: 15px;
 }
 
 @import './myprojects';
 
 .page__my-work {
-    padding: 50px 0px;
-    margin-bottom: -50px;
-    background-color: #EEEFF1;
+    background-color: $white-background;
 }
-.my-work {
-    margin: $auto-margin;
-    max-width: 500px;
+.page__my-work-container {
     text-align: center;
-    display: block;
+    display: grid;
 }
-.center__work {
+.page__my-work-title {
     font-size: 24px;
     font-weight: 600;
 }
-.my-work__text {
+.page__my-work-text {
+    display: flex;
+    justify-content: center;
     padding-top: 30px;
     padding-bottom: 50px;
     color: #727272;
-    font-size: $description-size;
+    font-size: 15px;
 }
-.page__my-video {
-    margin: $auto-margin;
+.page__my-work-text__centered {
+    max-width: 600px;
+}
+.page__my-work-video {
+    margin: 0 auto;
     text-align: center;
     padding-top: 57px;
-    background-color: #EEEFF1;
+    background-color: $white-background;
     padding-bottom: 50px;
+}
+.page__my-video__size {
+    width: 1200px;
+    height: 600px;
 }
 .page__footer {
     background-color: $blue-color;
-    padding: 30px 0px;
 }
-.footer__content {
-    max-width: 1000px;
-    margin: $auto-margin;
+.page__footer-container {
+    padding: 50px 0;
     text-align: left;
     display: block;
 }
-.footer__author {
+.page__footer__author {
     font-size: 21px;
     font-weight: 500;
     line-height: 25px;
     color: #FFF;
 }
-.footer__copyright {
+.page__footer__copyright {
     color: #FFF;
     font-size: 13px;
     font-weight: 400;
