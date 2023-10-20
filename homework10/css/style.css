@@ -22,12 +22,35 @@
 .navigation__item {
     float: left;
 }
+
+.navigation__link::before {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding-right: 42px;
+}
 .navigation__link {
     display: block;
     text-align: left;
     text-transform: uppercase;
     padding-right: 40px;
     font-size: 18px;
+}
+.navigation__home::before {
+    content: url("../images/homepage.png");
+}
+.navigation__about::before {
+    content: url("../images/about.png");
+}
+.navigation__works::before {
+    content: url("../images/work.png");
+}
+.navigation__process::before {
+    content: url(../images/process.png);
+}
+.navigation__contact::before {
+    content: url(../images/contact.png);
 }
 .top__header {
     margin-top: 150px;
@@ -88,17 +111,17 @@
 .stripe__project {
     display: flex;
 }
-.stripe__project-image {
+.project__image {
     padding-right: 10px;
 }
-.stripe__project-title {
+.project__title {
     color: white;
     display: grid;
     row-gap: 5px;
     grid-auto-columns: auto;
     text-align: left
 }
-.stripe__project-title_bold {
+.project__title__bold {
     font-weight: bold;
 }
 .page__my-work {
@@ -142,13 +165,13 @@
     text-align: left;
     display: block;
 }
-.page__footer-author {
+.page__footer__author {
     font-size: 21px;
     font-weight: 500;
     line-height: 25px;
     color: #FFF;
 }
-.page__footer-copyright {
+.page__footer__copyright {
     color: #FFF;
     font-size: 13px;
     font-weight: 400;

@@ -14,16 +14,16 @@
 .stripe__project {
     display: flex;
 }
-.stripe__project-image {
+.project__image {
     padding-right: 10px;
 }
-.stripe__project-title {
+.project__title {
     color: white;
     display: grid;
     row-gap: 5px;
     grid-auto-columns: auto;
     text-align: left
 }
-.stripe__project-title_bold {
+.project__title__bold {
     font-weight: bold;
 }

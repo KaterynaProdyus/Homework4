@@ -1,0 +1,22 @@
+.page__top {
+    padding: 50px 0;
+    background-color: #EEEFF1;
+}
+.navigation__menu {
+    display: inline-block;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation__item {
+    float: left;
+}
+.navigation__link {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 40px;
+    font-size: 18px;
+}
