@@ -15,12 +15,12 @@
     justify-content: center;
 }
 .list-top-item {
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 .top-link {
     color: #333;
     display: block;
-    padding: 15px;
+    padding: 1rem;
 }
 .top-link:hover {
     background-color: #8f8f8f;
@@ -71,6 +71,7 @@
 }
 .slider-wrapper {
     background-image: url(../images/Rectangle.png);
+    background-size: cover;
     background-position: center;
     background-color: #F13C6E;
     background-repeat: no-repeat;
@@ -105,8 +106,9 @@
     margin-bottom: 38px;
 }
 .special-offers-card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
 }
 .special-card {
     display: inline-block;
@@ -146,14 +148,15 @@
 .impuls-container-wrapper {
     background-color: #EFEFEF;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
     gap: 2px;    
 }
 .impuls-logo {
-    padding: 36px 75px;
     background-color: white;
     color: #FFF;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    padding: 36px 0;
 }
 
 .recent-wrapper {
@@ -185,32 +188,37 @@
 .gifts-wrapper {
     background-color: #EFEFEF;
 }
-.mail-wrapper-text {
-    padding-right: 100px;
-}
-.delivery-wrapper-text {
-    padding-right: 50px;
-}
 .gifts-section {
     color: white;
     background-color: #F13C6E;
     display: flex;
-    flex-grow: 1;
     justify-content: space-between;
-    padding: 20px 20px;
-    max-width: 550px;
+    padding: 1.5rem 1.5rem;
+    width: 45%;
 }
 .gift-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.delivery {
+.gifts-image-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
+.gift-car-image {
+    padding-left: 20px;
+    width: 100%;
+    height: 80%;
+}
+.gift-mail-image {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+.mail-wrapper-text {
+    max-width: 60%;
+}
 .gifts-section h3 {
     font-size: 18px;
 }
@@ -268,11 +276,231 @@
     background-color: #EFEFEF;
 }
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
     padding: 20px 0;
-    justify-content: space-between;
+}
+.footer-license {
+    text-align: right;
 }
 .footer-copyright {
     color: #828282;
+}
+
+@media screen and (max-width: 1200px) {
+    .your-email {
+        max-width: 21rem;
+        padding-left: 1.5rem;
+    }
+    .mail-wrapper-text {
+        max-width: 70%;
+    }
+    .gifts-image-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .special-card {
+        padding: 10px 1.3rem;
+    }
+    .special-card img {
+        width: 9rem;
+        height: 11rem;
+    }
+    .impuls-logo {
+        padding: 36px 5rem;
+    }
+    .impuls-logo img {
+        width: 10rem;
+    }
+    .footer-size {
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .gifts-image-container {
+        display: none;
+    }
+    .img-logo {
+        margin-right: 5px;
+        width: 70px;
+        height: 70px;
+    }
+    .logo-name {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .phone-number {
+        font-size: 10px;
+    }
+    .call-back {
+        font-size: 12px;
+        padding: 7px 10px;
+        margin-left: 10px;
+    }    
+    .list-top-item {
+        font-size: 0.75rem;
+        margin-left: 0.1rem;
+    }
+    .gifts-section {
+        padding: 1rem 1rem;
+    }
+    .gifts-section h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .gifts-section p {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+     .your-email {
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding-left: 1rem;
+    }
+    .mail-wrapper-text {
+        max-width: 100%;
+    }
+    .special-offers-card {
+        column-gap: 5px;
+    }
+    .special-card {
+        padding: 10px 0.5rem;
+    }
+    .special-card img {
+        width: 4rem;
+        height: 7rem;
+    }
+    .spacial-card-button {
+        padding: 10px 1.25rem;
+    }
+    .special-card-title{
+        font-size: 13px;
+    }
+    .special-card-descr {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .impuls-logo {
+        padding: 36px 2rem;
+    }
+    .impuls-logo img {
+        width: 4rem;
+        height: 1rem;
+    }
+    .second-link {
+        padding: 3px;
+    }
+    .list-second-item {
+        margin-right: 8px;
+        font-size: 10px;
+    }
+    .site-menu-title {
+        font-size: 14px;
+    } 
+    .site-menu-link {
+        font-size: 10px;
+        line-height: 26px;
+    }  
+    .social-network img {
+        padding-right: 12px;
+        width: 41px;
+        height: 31px;
+    }
+    .footer-size {
+        font-size: 0.7rem;
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .img-logo {
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .logo-name {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+    .phone-number {
+        font-size: 8px;
+    }
+    .call-back {
+        font-size: 10px;
+        padding: 7px 10px;
+        margin-left: 5px;
+    }    
+    .list-top-item {
+        font-size: 0.5rem;
+        margin-left: 0px;
+    }
+    .gifts-section {
+        padding: 1rem 1rem;
+    }
+    .gifts-image-container {
+        display: none;
+    }
+    .gifts-section h3 {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    .gifts-section p {
+        font-size: 0.7rem;
+        padding: 10px 0;
+    }
+    .your-email {
+        font-size: 0.75rem;
+        max-width: 100%;
+        padding-left: 0.5rem;
+    }
+    .mail-wrapper-text {
+        max-width: 100%;
+    }
+    .special-offers-card {
+        column-gap: 2px;
+    }
+    .special-card {
+        padding: 10px 0px;
+    }
+    .special-card img {
+        width: 4rem;
+        height: 7rem;
+    }
+    .spacial-card-button {
+        padding: 10px 0.5rem;
+    }
+    .special-card-descr {
+        font-size: 8px;
+    }
+    .impuls-logo {
+        padding: 36px 2rem;
+    }
+    .impuls-logo img {
+        width: 4rem;
+        height: 1rem;
+    }
+    .second-link {
+        padding: 2px;
+    }
+    .list-second-item {
+        margin-right: 8px;
+        font-size: 10px;
+    } 
+    .site-menu-title {
+        font-size: 12px;
+    }  
+    .site-menu-link {
+        font-size: 9px;
+        line-height: 25px;
+    }
+    .social-network img {
+        padding-right: 6px;
+        width: 31px;
+        height: 25px;
+    }
+    .footer-size {
+        font-size: 0.5rem;
+    }    
 }
