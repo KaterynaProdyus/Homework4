@@ -13,6 +13,7 @@
 }
 .list-top-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .list-top-item {
@@ -29,6 +30,7 @@
 .center-section-container {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,7 +52,7 @@
     border: 1px solid #F13C6E;
     border-radius: 20px;
     padding: 15px 25px;
-    margin-left: 40px;
+    margin-left: 15px;
     background-color: #FFF;
 }
 .second-header {
@@ -59,6 +61,7 @@
 }
 .list-main-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;  
 }
 .list-second-item {
@@ -108,7 +111,6 @@
 }
 .special-offers-card {
     display: flex;
-    /* grid-template-columns: auto auto auto auto; */
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -152,7 +154,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
     gap: 2px;    
     padding: 0 0;
 }
@@ -161,7 +162,7 @@
     color: #FFF;
     display: flex;
     justify-content: space-around;
-    padding: 35px 74px;
+    padding: 35px 71px;
 }
 
 .recent-wrapper {
@@ -172,10 +173,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* grid-template-columns: auto; */
     column-count: 1;
     background-color: #FFF;
-    border-top: 1px solid #EFEFEF;
     padding-bottom: 30px;
 }
 .site-menu-link {
@@ -189,6 +188,7 @@
     font-weight: bold;
     padding-bottom: 30px;
     max-width: 120px;
+    border-bottom: 1px solid #EFEFEF;
 }
 .gifts-wrapper {
     background-color: #EFEFEF;
@@ -200,8 +200,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 1.5rem;
-    width: 400px;
-    height: 200px;
+    width: 540px;
+    height: 212px;
 }
 .gift-details {
     display: flex;
@@ -243,6 +243,7 @@
     max-width: 300px;
     text-align: left;
     padding-left: 20px;
+    padding-right: 95px;
 }
 .gifts-container-wrapper {
     display: flex;
@@ -261,26 +262,36 @@
 }
 .site-contact-wrapper {
     border-top: 1px solid #EFEFEF;
+    padding: 20px 0px;
 }
 .contact-container {
-    padding-top: 30px;
-    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contacts-wrapper {
     display: flex;
     justify-content: space-between;
+}
+.phone-number {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
 }
 .social-network {
     display: inline-block;
 }
 .social-network img {
-    padding-right: 20px;
+    padding-right: 13px;
 }
 .footer-wrapper {
     width: 100%;
     background-color: #EFEFEF;
 }
 .footer-container {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     column-gap: 10px;
     padding: 20px 0;
 }
@@ -292,12 +303,29 @@
 }
 
 @media screen and (max-width: 835px) {
+    .list-top-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-section-container {
+        flex-direction: column;
+    }
     .gifts-container-wrapper {
         justify-content: center;
     }
-    
+    .list-main-links {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 430px) {
+    .list-top-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-section-container {
+        flex-direction: column;
+    }
     .gifts-section {
         display: flex;
         flex-direction: column;
@@ -320,5 +348,16 @@
     .gift-image {
         padding-left: 0;
     }
+    .site-contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-container {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .contacts-wrapper {
+        padding: 20px 0px;
+        justify-content: space-around;
+    }
 }
-
